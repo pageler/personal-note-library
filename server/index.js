@@ -22,12 +22,12 @@ app.get("/api/notes/:id", (req, res) => {
   res.send(note);
 });
 
-const PORT = process.env.PORT || 8000; // Variable for .env port to use in template string below
+const PORT = process.env.PORT || 8000;
+// Variable for .env port to use in template string below
 
 app.listen(
   PORT,
   console.log(
     `Server running in ${process.env.NODE_ENV} mode on PORT ${PORT}...`.yellow
-      .bold
   )
 );
