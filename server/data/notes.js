@@ -1,4 +1,3 @@
-// Temporary data folder used to setup MyNotes.js
 const notes = [
     {
         _id: "1",
