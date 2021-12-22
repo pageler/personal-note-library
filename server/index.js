@@ -1,12 +1,13 @@
-const express = require("express");
-const notes = require("./data/notes");
-const dotenv = require("dotenv");
-const colors = require("colors");
-const connectDB = require("./config/db");
+import express from "express";
+import dotenv from "dotenv";
+import connectDB from "./config/db.js";
+import colors from "colors";
+import userRoutes from "./routes/UserRoutes.js";
 
 const app = express();
 dotenv.config();
 connectDB();
+app.use(express.json()); // convert to json format
 
 app.get("/", (req, res) => {
     res.send("personal-note-library API is running on port 5000...");
@@ -18,11 +19,13 @@ app.get("/api/notes", (req, res) => {
 });
 
 // API endpoint for a specific ./data/notes/note
-app.get("/api/notes/:id", (req, res) => {
-    const note = notes.find((n) => n._id === req.params.id);
+//app.get("/api/notes/:id", (req, res) => {
+//    const note = notes.find((n) => n._id === req.params.id);
 
-    res.send(note);
-});
+//    res.send(note);
+//});
+
+app.use("api/users", userRoutes);
 
 const PORT = process.env.PORT || 8000;
 // Variable for .env port to use in template string below

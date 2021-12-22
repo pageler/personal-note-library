@@ -2,7 +2,8 @@
     "name": "private-note-library",
     "version": "1.0.0",
     "description": "",
-    "main": "server/index.js",
+    "main": "index.js",
+    "type": "module",
     "scripts": {
         "start": "nodemon server/index.js",
         "client": "npm start --prefix client",
