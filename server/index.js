@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import colors from "colors";
 import userRoutes from "./routes/UserRoutes.js";
+import noteRoutes from "./routes/NoteRoutes.js";
 import { errorHandler, notFound } from "./middleware/ErrorMiddleware.js";
 
 const app = express();
@@ -15,6 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/users", userRoutes);
+app.use("/api/notes", noteRoutes);
 
 // Error middleware
 app.use(notFound);
