@@ -20,7 +20,9 @@ const LandingPage = ({ userInfo }) => {
                     <div className="intro-text">
                         <div>
                             <h1 className="title">
-                                The Public Note Library... Welcome!
+                                Personal Note Library...
+                                <br />
+                                Welcome!
                             </h1>
                             <p className="subtitle">
                                 Your one secure repository for personal and
