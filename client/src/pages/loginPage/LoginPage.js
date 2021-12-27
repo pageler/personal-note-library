@@ -17,6 +17,7 @@ const LoginPage = () => {
     const { loading, error, userInfo } = userLogin;
 
     const navigate = useNavigate();
+
     useEffect(() => {
         if (userInfo) {
             navigate("/notes");
