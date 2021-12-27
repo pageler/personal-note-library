@@ -29,6 +29,7 @@ const RegisterPage = () => {
             return setPicMessage("Please Select An Image");
         }
         setPicMessage(null);
+
         if (pics.type === "image/jpeg" || pics.type === "image/png") {
             const data = new FormData();
             data.append("file", pics);

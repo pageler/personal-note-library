@@ -4,12 +4,13 @@ import { useNavigate } from "react-router-dom";
 import "./LandingPage.css";
 
 const LandingPage = ({ userInfo }) => {
-    // Check localStorage for User data:
     const navigate = useNavigate();
+
+    // Check localStorage for User data:
     useEffect(() => {
         const userInfo = localStorage.getItem("userInfo");
         if (userInfo) {
-            navigate("/");
+            navigate("/notes");
         }
     }, [navigate, userInfo]);
 

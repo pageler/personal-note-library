@@ -8,6 +8,7 @@ import LoginPage from "./pages/loginPage/LoginPage.js";
 import RegisterPage from "./pages/registerPage/RegisterPage.js";
 import CreateNote from "./pages/singleNote/CreateNote.js";
 import SingleNote from "./pages/singleNote/SingleNote.js";
+import ProfilePage from "./pages/profilePage/ProfilePage.js";
 
 const App = () => {
     const [search, setSearch] = useState("");
@@ -21,6 +22,7 @@ const App = () => {
                     <Route path="/" element={<LandingPage />} />
                     <Route path="/login" element={<LoginPage />} />
                     <Route path="/register" element={<RegisterPage />} />
+                    <Route path="/profile" element={<ProfilePage />} />
                     <Route
                         path="/notes"
                         element={<MyNotes search={search} />}
