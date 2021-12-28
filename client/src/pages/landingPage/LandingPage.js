@@ -11,6 +11,8 @@ const LandingPage = ({ userInfo }) => {
         const userInfo = localStorage.getItem("userInfo");
         if (userInfo) {
             navigate("/notes");
+        } else {
+            navigate("/");
         }
     }, [navigate, userInfo]);
 
