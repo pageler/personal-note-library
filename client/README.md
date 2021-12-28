@@ -1,3 +1,5 @@
+I'd like to express my gratitude to RoadsideCoder for his help with this project.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

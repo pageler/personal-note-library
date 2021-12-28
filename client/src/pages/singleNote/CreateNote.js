@@ -65,7 +65,7 @@ function CreateNote() {
                                 as="textarea"
                                 value={content}
                                 placeholder=" Enter the content
-                                Markdown syntax is supported"
+                                (Markdown syntax is supported)"
                                 rows={4}
                                 onChange={(e) => setContent(e.target.value)}
                             />
