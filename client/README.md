@@ -1,4 +1,4 @@
-I'd like to express my gratitude to RoadsideCoder for his help with this project.
+I'd like to express my gratitude to RoadsideCoder (Piyush Agarwal) for his help with this project.
 
 # Getting Started with Create React App
 
