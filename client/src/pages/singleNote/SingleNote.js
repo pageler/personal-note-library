@@ -99,7 +99,8 @@ function SingleNote() {
                             <Form.Label>Content</Form.Label>
                             <Form.Control
                                 as="textarea"
-                                placeholder="Enter the content"
+                                placeholder="Enter the content 
+                                (Markdown syntax is supported)"
                                 rows={4}
                                 value={content || false}
                                 onChange={(e) => setContent(e.target.value)}

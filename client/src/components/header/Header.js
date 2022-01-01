@@ -36,7 +36,8 @@ const Header = ({ setSearch }) => {
                         <Form inline>
                             <FormControl
                                 type="text"
-                                placeholder="Search"
+                                style={{ textAlign: "center" }}
+                                placeholder="Search By Title"
                                 className="mr-sm-2"
                                 onChange={(e) => setSearch(e.target.value)}
                             />
