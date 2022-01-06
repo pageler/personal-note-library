@@ -32,7 +32,7 @@ const Header = ({ setSearch }) => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="m-auto">
+                    <Nav className="m-auto" style={{ paddingRight: 120 }}>
                         <Form inline>
                             <FormControl
                                 type="text"
